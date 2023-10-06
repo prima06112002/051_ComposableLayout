@@ -40,6 +40,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
 @Composable
 fun TampilText(message:String, from:String, modifier: Modifier=Modifier){
     Column( verticalArrangement = Arrangement.Center, modifier =  modifier){
