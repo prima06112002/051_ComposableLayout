@@ -34,7 +34,6 @@ class MainActivity : ComponentActivity() {
                 ) {
                     TampilLayar(pesan = getString(R.string.greeting),
                         dari = getString(R.string.name) )
-                    Greeting("Android")
                 }
             }
         }
@@ -77,17 +76,10 @@ fun TampilLayar(pesan: String, dari: String){
     }
 }
 
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     KomposclassbTheme {
-        TampilLayar(pesan = "Selamat Datang", dari ="Di UMY" )
-        Greeting("Android")
+        TampilLayar(pesan = "Selamat Datang", dari = "Di UMY")
     }
 }
